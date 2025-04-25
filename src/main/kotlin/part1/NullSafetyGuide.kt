@@ -1,3 +1,5 @@
+package part1
+
 class NullSafetyGuide {
 
     // ✅ 자바 스타일의 null 체크
@@ -44,16 +46,16 @@ class NullSafetyGuide {
             ?: 0
     }
 
-    /*
+    /**
      * ✅ !! 연산자
      * nullable type이지만 null이 아님을 단정할 때 사용
      * null이면 NPE가 발생하므로 주의
      */
-    fun length(str: String?): Int {
+    fun length1(str: String?): Int {
         return str!!.length
     }
 
-    /*
+    /**
      * ✅ 코틀린에서 자바 코드 호출 시의 null 처리
      * 코틀린은 자바의 null 관련 어노테이션을 인식
      * 만약 @Nullable이 적용된 값을 코틀린에서 바로 받으면 에러 발생

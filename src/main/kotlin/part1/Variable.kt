@@ -1,7 +1,9 @@
+package part1
+
 class Variable {
 
     fun examples() {
-        /*
+        /**
          * ✅ var vs val
          * var : 가변 키워드
          * val : 불변 키워드
@@ -11,7 +13,7 @@ class Variable {
         var mutable = "hi"
         mutable = "hello"
 
-        /*
+        /**
          * ✅ 타입 추론
          * 컴파일러가 자동으로 타입을 추론해 주므로 생략 가능
          * 기본적으로는 val을 사용하고 필요한 경우에만 var로 선언하는 것을 권장
@@ -35,5 +37,5 @@ class Variable {
         val ex = Example("test")
     }
 
-    class Example (var name: String)
+    class Example(var name: String)
 }

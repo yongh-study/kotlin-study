@@ -1,3 +1,5 @@
+package part1;
+
 public class Example {
 
     private String name;
